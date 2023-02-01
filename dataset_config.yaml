@@ -1,0 +1,8 @@
+dataset_path: songs/
+data_path: data.json
+sample_rate: 22050
+track_duration: 30
+mfcc: 13
+n_fft: 2048
+hop_length: 512
+segments: 5
