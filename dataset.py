@@ -7,9 +7,22 @@ import yaml
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
+def load_yaml():
+    """ Loads configuration settings from dataset_config.yaml
+    
+    Returns:
+        data (dict): a dict containing the configuration settings
+    """
+    with open("dataset_config.yaml","r") as f:
+        data = yaml.load(f,Loader=yaml.Loader)
+        return data
+
 class MFFC_Generator:
-    
-    
+    """A dataset generator which stores MFCCs and labels of the music
+
+    Attributes:
+        data: contains the labels and MFCC data
+    """
     def __init__(self):
         # Dictionary to store labels, and MFCCs
         self.data = {
@@ -17,15 +30,12 @@ class MFFC_Generator:
             "mfcc": []
         }    
 
-    # Loads configuration settings
-    def _load_yaml(self):
-        with open("dataset_config.yaml","r") as f:
-            data = yaml.load(f,Loader=yaml.Loader)
-            return data
-
-    # Generates a dataset consisting of labels and MFCCs for the dataset, stored in JSON
+   
     def generate_dataset(self):
-        config = self._load_yaml()
+
+        """Generates a dataset consisting of labels and MFCCs for the dataset, stored in JSON
+        """
+        config = load_yaml()
         samples_per_segment = int((config["sample_rate"] * config["track_duration"]) / config["segments"])
         mfcc_vectors_per_segment = math.ceil(samples_per_segment / config["hop_length"])
 
