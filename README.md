@@ -2,11 +2,11 @@
 # Music Genre Classification using a CNN
 ## Table of Contents
 
-  * [🗺️ Overview](#-overview)
-  * [⚙️ Pre-processing steps and Data preparation](#-gratitude-diary)
-  * [📦 Model](#-gratitude-word-cloud)
-  * [⏳ Training](#-heatmap-calendar)
-  * [📊 Results and Analysis](#-mood-tracking-graph)
+  * [🗺️ Overview](#%EF%B8%8F-overview)
+  * [⚙️ Pre-processing steps and Data preparation](#%EF%B8%8F-preprocessing-steps-and-data-preparation)
+  * [📦 Model](#-model)
+  * [⏳ Training](#-training)
+  * [📊 Results and Analysis](#-results-and-analysis)
   * [🙏 Acknowledgements](#-acknowledgements)
   
 
