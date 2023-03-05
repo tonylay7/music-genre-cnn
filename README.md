@@ -20,7 +20,7 @@ I'm interested in working with audio data for machine learning as I've never don
 ### Analog Digital Conversion
 Sound can be represented by an **analog waveform**, in its simplest form it could be a sine wave. The wave is projected in the **Time** domain, so Time is on the y axis and we care about **amplitude** (the loudness) which is recorded on the x-axis. We can intrepret the **frequency** from this waveform as **pitch** This needs to be converted into a **digital signal** so that the waveform can be computed more efficiently - which motivates the need for **Analog Digital Conversion** as the first pre-processing concept. This is achieved through **sampling**, which is essentially reading the waveform at fixed intervals, defined by the **sampling rate** measured in Hz. Samples are indicated by the lines shown in the image below.
 
-[sampling image]
+![Analog Digital Conversion image](media/ADC.jpg)
 
 There are a fixed number of bits that we can use to store the amplitude, we can't store the exact value of the amplitude at each sample of the waveform so we need to 'round' it to the closest value bounded by the number of bits that we have. This process is called **quantization** and it's clear that the process of sampling and quantization combined will introduce a **small amount of error or noise**.
 
