@@ -18,7 +18,7 @@ I'm interested in working with audio data for machine learning as I've never don
 ## 📝 Theory behind processing audio data
 
 ### Analog Digital Conversion
-Sound can be represented by an **analog waveform**, in its simplest form it could be a sine wave. The wave is projected in the **Time** domain, so Time is on the y axis and we care about **amplitude** (the loudness) which is recorded on the x-axis. We can intrepret the **frequency** from this waveform as **pitch** This needs to be converted into a **digital signal** so that the waveform can be computed more efficiently - which motivates the need for **Analog Digital Conversion** as the first pre-processing concept. This is achieved through **sampling**, which is essentially reading the waveform at fixed intervals, defined by the **sampling rate** measured in Hz. Samples are indicated by the lines shown in the image below.
+Sound can be represented by an **analog waveform**, in its simplest form it could be a sine wave. The wave is projected in the **Time** domain, so Time is on the y axis and we care about **amplitude** (the loudness) which is recorded on the x-axis. We can intrepret the **frequency** from this waveform as **pitch**. This needs to be converted into a **digital signal** so that the waveform can be computed more efficiently - which motivates the need for **Analog Digital Conversion** as the first pre-processing concept. This is achieved through **sampling**, which is essentially reading the waveform at fixed intervals, defined by the **sampling rate** measured in Hz. Samples are indicated by the lines shown in the image below.
 
 ![Analog Digital Conversion image](media/ADC.jpg)
 
@@ -41,6 +41,7 @@ So far the actual features of the sound we are observing are the amplitude and f
 
 
 ## ⚙️ Pre-processing steps and Data preparation
+
 
 
 ## 📦 Model
